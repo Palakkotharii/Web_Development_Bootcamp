@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Text & Box</title>
+    <style>
+        h1{
+            text-shadow: 3px 3px 3px red;
+            /* Mulitple shadow : */
+            text-shadow: 3px 3px 3px red, 4px 4px 4px blue;
+        }
+        .box{
+             background-color:aqua;
+             width: 200px;
+             height: 200px;
+             box-shadow: 10px 10px 15px grey;
+             box-shadow: 12px 12px 12px blue, 16px 17px 19px yellow ;
+             color: red;
+        }
+        .text{
+            box-shadow: 0 0 0 1px red;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is my heading </h1>
+    <div class="box">
+        This is my Box 
+    </div>
+    <br>
+    <br>
+    <div class="text">
+        Lorem ipsum dolor sit amet consectetur.
+    </div>
+</body>
+</html>
