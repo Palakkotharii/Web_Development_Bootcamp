@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linking in css</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .contiainer {
+        border: 2px solid red;
+        background-color: bisque;
+        padding: 34px;
+        margin: 34px auto;
+        width: 50%;
+      }
+      .btn {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        border: none;
+        background-color: crimson;
+        padding: 6px;
+        cursor: pointer;
+        margin: 6px;
+        font-size: 13px;
+        border-radius: 4px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
+        color: rgb(58, 9, 9);
+        background-color: white;
+      }
+      a:visited{
+        background-color:yellow;
+      }
+      a:active{
+        background-color:darkblue;
+      }
+      .btn:hover{
+        border: 2px solid black;
+        background-color:white;
+        color:darkgoldenrod;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contiainer" id="cont1">
+      <h3>This is my heading for</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nesciunt
+        aliquam delectus aliquid ea itaque earum illum laborum enim labore nulla
+        quidem, tempora quos consequatur sapiente veniam necessitatibus, sint
+        animi accusantium ab, numquam dolore.
+      </p>
+      <a href="https://google.com" class="btn">Read More </a>
+      <button class="btn">Contact Us</button>
+    </div>
+  </body>
+</html>
