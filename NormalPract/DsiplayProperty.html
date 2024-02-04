@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display property in css</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+      header {
+        margin: auto; 
+        border: 2px solid red;
+        width: 1200px;
+      }
+      img {
+        margin: auto;
+        display: block;
+        width: 34px;
+      }
+      h3 {
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0px;
+      }
+      .box {
+        display: inline-block; /*This is becoz mujhe e inline chnyie or mujhe eski width bhi set krmna hai  */
+        border: 4px solid black;
+        background-color:gray;
+        margin: 4px 0px;
+        padding: 23px;
+        width: 33%;
+        box-sizing: border-box;/*this is becoz if not used then  the padding and border will take space  including the wuddthh +padding+margin   so tha's why used here a box=sizing :border-box pprepery: ;*/
+      }
+      .container {
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="top">
+      <img
+        src="google-logo-28FA7991AF-seeklogo.com.png"
+        alt="no imaage found "
+      />
+      <h3>Welcome to Palak's Blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi esse incidunt assumenda amet, dolore consequatur hic suscipit alias ducimus possimus quos nulla necessitatibus nostrum dolores corporis voluptatum? Hic sed suscipit labore ea assumenda!</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi esse incidunt assumenda amet, dolore consequatur hic suscipit alias ducimus possimus quos nulla necessitatibus nostrum dolores corporis voluptatum? Hic sed suscipit labore ea assumenda!</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi esse incidunt assumenda amet, dolore consequatur hic suscipit alias ducimus possimus quos nulla necessitatibus nostrum dolores corporis voluptatum? Hic sed suscipit labore ea assumenda!</p>
+        </div>
+    </div>
+  </body>
+</html>
+
+
+<!-- Note in case  off the inline element we cannot set the widthbacoz as it says that take the space as per the space of the element
+
+.) but in case of the block level element it says that I take the whole now you can change the width of the element .-->
